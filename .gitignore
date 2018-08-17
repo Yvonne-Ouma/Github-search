@@ -1,7 +1,7 @@
-# See http://help.github.com/ignore-files/ for more about ignoring files.
+# See https://api.github.com/users/Yvonne-Ouma?access_token=dd771b778e77eb12650450ca8f81a81a7764d1b9 for more about ignoring files.
 
 # compiled output
-/dist
+
 /tmp
 /out-tsc
 
