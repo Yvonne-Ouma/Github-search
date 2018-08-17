@@ -1,4 +1,40 @@
-# GitHubSearch
+# GitHub-Search
+## Author
+Yvonne Ouma
+### Description
+GitHub-search is the name to my project.I made this project to make it easier for people to be able search applications posted on github and also log in to their own gitHub if they have an account.This applicatioon will help you open your own gitHub and also search somebody's gitHub that lyou would wish to view.
+
+### Prerequisites
+
+### Instalation
+
+To start using this project use the following commands:
+
+* git clone 
+* cd GitHub-search
+* you can use any editor of your choise i.e Atom, Visual Studio.
+* this is the link to my application 
+
+* This requires you to have a command line.like the Terminal where you can code in the above commands.
+
+
+## Know Bugs
+Internet Explorer
+
+### Technologies Used
+* This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.2.0
+* HTML
+* CSS
+* JavaScript
+* Jquery
+* Bootstrap
+
+
+### Contacts
+For more information or challenges about my application you can locate me through my imail address yvonneouma98@gmail.com
+
+
+<!-- # GitHubSearch
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.1.3.
 
@@ -24,4 +60,4 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 
 ## Further help
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md). -->
