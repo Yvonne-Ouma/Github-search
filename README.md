@@ -3,7 +3,7 @@
 Yvonne Ouma
 ### Description
 GitHub-search is the name to my project.I made this project to make it easier for people to be able search applications posted on github and also log in to their own gitHub if they have an account.This applicatioon will help you open your own gitHub and also search somebody's gitHub that you would wish to view.
-
+* this is the link to my application https://yvonne-ouma.github.io/Github-search/
 ### Prerequisites
 * web browser
 * git
@@ -14,7 +14,7 @@ To start using this project use the following commands:
 * git clone https://github.com/Yvonne-Ouma/Github-search.git
 * cd GitHub-search
 * you can use any editor of your choise i.e Atom, Visual Studio.
-* this is the link to my application 
+
 
 * This requires you to have a command line.like the Terminal where you can code in the above commands.
 
