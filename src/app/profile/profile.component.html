@@ -1,5 +1,10 @@
 <body>
-    <img src="{{profile.avatar_url}}" alt="">
-    <footer><cite>{{profile.login}}</cite></footer>
+        <div class="card" style="width:400px">
+                <img class="card-img-top" src="{{profile.avatar_url}}" alt="my profile image">
+                <div class="card-body">
+                  <h4 class="card-title">{{profile.login}}</h4>
+                  <p class="card-text">this is my profile.</p>
+                </div>
+            </div>
     <app-repository></app-repository>  
 </body>
