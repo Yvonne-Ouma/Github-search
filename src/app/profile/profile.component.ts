@@ -5,6 +5,7 @@ import { User} from '../user'
 @Component({
   selector: 'app-profile',
   templateUrl: './profile.component.html',
+  providers: [ProfileRequestService],
   styleUrls: ['./profile.component.css']
 })
 export class ProfileComponent implements OnInit {
@@ -14,6 +15,7 @@ export class ProfileComponent implements OnInit {
   ngOnInit() {
     this.profileService.profileRequest()
     this.profile=this.profileService.profile
+    console.log(this.profile)
   }
 
 }

@@ -11,23 +11,26 @@ import { Repository } from '../repository';
 
 export class ProfileRequestService {
   profile:User;
+  repository: Repository;
+  repos: any;
   
 
  constructor(private http: HttpClient) { 
-   this.profile= new User("","",);
-  //  this.repository= new Repository("","");
+   this.profile= new User("","");
+   this.repository = new Repository("","");
  }
- profileRequest(){
+ profileRequest()
+ {
    interface ApiResponse{
      avatar_url: any;
      login: string
      
    }
    let promise = new Promise((resolve,reject)=>{
-     this.http.get<ApiResponse>(environment.apiUrl).toPromise().then(response=>{
+     this.http.get<ApiResponse>("https://api.github.com/users/Yvonne-Ouma?access_token="+environment.apiUrl).toPromise().then(response=>{
        this.profile.avatar_url= response.avatar_url
        this.profile.login = response.login
-       
+console.log(response)       
 
        resolve()
      },
@@ -40,34 +43,28 @@ export class ProfileRequestService {
    })
    return promise
  }
-}
-
-export class RepositoryRequestService{
-  repository: Repository;
-  constructor(private http: HttpClient) { 
-    this.repository= new Repository("","");
-  }
+ 
   repositoryRequest(){
-    interface ApiResponse{
-      repos_url: string,
-      node_id: string
-      
-    }
-    let promise = new Promise((resolve,reject)=>{
-      this.http.get<ApiResponse>(environment.apiUrl).toPromise().then(response=>{
-        this.repository.repos_url= response.repos_url
-        this.repository.node_id = response.node_id
-        
+        interface ApiResponse{
+          repos_url: string
+          node_id: string
+          
+        }
+        let promise = new Promise((resolve,reject)=>{
+          this.http.get<ApiResponse>("https://api.github.com/users/Yvonne-Ouma/repos?access_token=" + environment.apiUrl).toPromise().then(response=>{
+            this.repos= response
+    
+            resolve()
+          },
+          error=>{
+            
+           reject(error)
+           }
+          )
+          })
+        return promise
+ }
+ }
+ 
 
-        resolve()
-      },
-      error=>{
-        this.repository.repos_url="You can do it!! Don't give up."
-        this.repository.node_id="Sorry!! Keep trying"
-        reject(error)
-      }
-    )
-    })
-    return promise
-  }
-}
+
