@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { environment } from '../../environments/environment';
 import { User } from '../user';
-// import { Repository } from '../repository';
+import { Repository } from '../repository';
 
 
 @Injectable({
@@ -15,7 +15,7 @@ export class ProfileRequestService {
 
  constructor(private http: HttpClient) { 
    this.profile= new User("","",);
-   // this.repository= new Repository("","");
+  //  this.repository= new Repository("","");
  }
  profileRequest(){
    interface ApiResponse{
@@ -42,32 +42,32 @@ export class ProfileRequestService {
  }
 }
 
-// export class RepositoryRequestService{
-//   repository: Repository;
-//   constructor(private http: HttpClient) { 
-//     this.repository= new Repository("","");
-//   }
-//   repositoryRequest(){
-//     interface ApiResponse{
-//       repos_url: string,
-//       node_id: string
+export class RepositoryRequestService{
+  repository: Repository;
+  constructor(private http: HttpClient) { 
+    this.repository= new Repository("","");
+  }
+  repositoryRequest(){
+    interface ApiResponse{
+      repos_url: string,
+      node_id: string
       
-//     }
-//     let promise = new Promise((resolve,reject)=>{
-//       this.http.get<ApiResponse>(environment.apiUrl).toPromise().then(response=>{
-//         this.repository.repos_url= response.repos_url
-//         this.repository.node_id = response.node_id
+    }
+    let promise = new Promise((resolve,reject)=>{
+      this.http.get<ApiResponse>(environment.apiUrl).toPromise().then(response=>{
+        this.repository.repos_url= response.repos_url
+        this.repository.node_id = response.node_id
         
 
-//         resolve()
-//       },
-//       error=>{
-//         this.repository.repos_url="You can do it!! Don't give up."
-//         this.repository.node_id="Sorry!! Keep trying"
-//         reject(error)
-//       }
-//     )
-//     })
-//     return promise
-//   }
-// }
+        resolve()
+      },
+      error=>{
+        this.repository.repos_url="You can do it!! Don't give up."
+        this.repository.node_id="Sorry!! Keep trying"
+        reject(error)
+      }
+    )
+    })
+    return promise
+  }
+}
