@@ -1,5 +1,4 @@
-<div class="repository">
+<div class="repository" *ngFor="let repo of repos.repos">
     <p>this is a list of the repositories i have done:</p>
-    <h4>{{repos.repos[1].name}}</h4>
-    <h4>{{repos.repos[2].name}}</h4>
+    <h4>{{repo.name}}</h4>
 </div>

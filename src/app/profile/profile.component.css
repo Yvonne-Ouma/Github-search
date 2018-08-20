@@ -2,7 +2,7 @@ img{
     border-radius: 50%;
 }
 body{
-    padding: 60px;
+    padding-right: 60px;
 }
 .repos{
     text-align: center;
@@ -10,4 +10,5 @@ body{
 h1{
     text-align: center;
     font-family: 'Fredericka the Great', cursive;
+    font-size: 60px;
 }
