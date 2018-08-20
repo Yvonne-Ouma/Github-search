@@ -4,18 +4,28 @@
                 <div>
                         <h1>Welcome to GitHub-Search</h1>
                 </div>
-                <div class="card" style="width:200px">
-                        <img class="card-img-top" src="{{profile.avatar_url}}" alt="my profile image">                        
-                        <div class="card-body">
-                                <h4 class="card-title">{{profile.login}}</h4>
-                                <p class="card-text">this is my profile.</p>
-                        </div>
+                <div class="row">
+                <div class="col-md-12">
+                <div class="col-md-3">
+                                <div class="card" style="width:200px">
+                                                <img class="card-img-top" src="{{profile.avatar_url}}" alt="my profile image">                        
+                                                <div class="card-body">
+                                                        <h4 class="card-title">{{profile.login}}</h4>
+                                                        <p class="card-text">this is my profile.</p>
+                                                </div>
+                                        </div>
                 </div>
+                <div class="col-md-9">
+                                <div class="">
+                                                <app-repository></app-repository>
+                                                </div>
+                </div>
+                </div>
+                </div>
+               
         
         
-<div class="repos">
-<app-repository></app-repository>
-</div>
+
      
 </div> 
 </body>
