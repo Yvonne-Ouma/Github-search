@@ -1,6 +1,6 @@
 .repository{
     background-color: antiquewhite;
-    max-width: 800px;
+    max-width: 1000px;
 }
 
 a{
@@ -10,4 +10,8 @@ a{
     text-align: center; 
     text-decoration: none;
     display: inline-block;
+}
+.all{
+    text-align: center;
+    padding-left:400px;
 }
