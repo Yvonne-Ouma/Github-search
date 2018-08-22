@@ -3,4 +3,6 @@
 </div>
 <div class="repository" *ngFor="let repo of repos.repos">
     <h4>{{repo.name}}</h4>
+    <h5>{{repo.description}}</h5>
+    <a href="{{repo.html_url}}">view Repository</a><br>
 </div>

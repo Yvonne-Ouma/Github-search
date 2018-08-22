@@ -1,4 +1,13 @@
 .repository{
     background-color: antiquewhite;
-    max-width: 200px;
+    max-width: 800px;
+}
+
+a{
+    background-color:burlywood;
+    /* color: white; */
+    padding: 14px 25px;
+    text-align: center; 
+    text-decoration: none;
+    display: inline-block;
 }

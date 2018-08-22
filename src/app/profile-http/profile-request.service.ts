@@ -53,6 +53,7 @@ console.log(response)
         let promise = new Promise((resolve,reject)=>{
           this.http.get<ApiResponse>("https://api.github.com/users/Yvonne-Ouma/repos?access_token=" + environment.apiUrl).toPromise().then(response=>{
             this.repos= response
+            console.log(response)
     
             resolve()
           },
